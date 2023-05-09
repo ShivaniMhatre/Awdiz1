@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://kit.fontawesome.com/ed6d2e8a4e.js" crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 5 Amazon Navbar</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        #screen{
+            width: 100%;
+            height: 100vh;
+            /* border: 5px solid red; */
+        }
+        #navbar{
+            width:100%;
+            height: 60px;
+            border: 2px solid black;
+            background-color: rgb(19,25,33);
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly; 
+        }
+        #logo{
+            width: 15%;
+            display: flex;
+        }
+        #logo>h1{
+            margin-left: 15px;
+        }
+        #location{
+            width: 10%;
+            display: flex;
+            
+        }
+        #location1{
+            color: white;
+            padding-top: 19px;
+        }
+        #text{
+            padding-left: 5px;
+        }
+
+        #search{
+            width: 50%;
+            display: flex;
+        }
+        #all{
+            height: 40px;
+            width: 90px;
+            background-color: rgb(243,243,243);
+            border: none;
+            background-color: none;
+            border-top-left-radius: 5px;
+            border-bottom-left-radius: 5px;
+        }
+        #search-box{
+            width: 750px;
+            height: 40px;
+        }
+        #btn{
+            width: 50px;
+            height: 40px;
+            border: none;
+            border-color:none;
+            border-bottom-left-radius: 5px;
+            border-bottom-right-radius: 5px;
+            background-color: rgb(254, 189, 105);
+        }
+        #country{
+            width: 5%;
+            display: flex;
+            padding-left: 10px;
+        }
+        #flag{
+            padding-right: 5px;
+            padding-top: 4px;
+        }
+        #darrow{
+            padding-top: 12px;
+        }
+        #signin{
+            width: 13%;
+        }
+        #order{
+            width: 8%;
+        }
+        #darrow1{
+            padding-left: 5px;
+        }
+        #cart{
+            width: 8%;
+            display: flex;
+        }
+    </style>
+</head>
+<body>
+    <div id="screen">
+        <div id="navbar">
+            <div id="logo">
+                <h1>amazon</h1>
+                <small style="padding-top: 18px;">.in</small>
+            </div>
+            <div id="location">
+                <i class="fa-solid fa-location-dot" id="location1"></i>
+                <div>
+                    <div id="text">
+                        <small>Hello</small>
+                        <h5>Select Your Country</h5>                       
+                    </div>
+                </div>
+            </div>
+            <div id="search">
+                <button id="all">All</button>
+                <input id="search-box" placeholder="Search amazon.in"/>
+                <button id="btn">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+            </div>
+            <div id="country">
+                <div><i class="fa-solid fa-flag" id="flag"></i></div>
+                <div>En</div>
+                <div><i class="fa-solid fa-angle-down fa-xs" id="darrow"></i></div>
+            </div>
+            <div id="signin">
+                <div>Hello,Sign In</div>
+                <div style="display: flex;">
+                <h4>Account & List</h4>
+                    <div>
+                        <i class="fa-solid fa-angle-down fa-xs" id="darrow1"></i>
+                    </div>
+                </div>
+            </div>
+            <div id="orders">
+                <div>Returns</div>
+                <div><b>& Orders</b></div>
+            </div>
+            <div id="cart">
+                <div>
+                    <i class="fa-solid fa-cart-shopping fa-xl"></i>
+                </div>
+                <div style="font-weight: bolder;padding-top: 1px;">cart</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script src="https://kit.fontawesome.com/ed6d2e8a4e.js" crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 5 FlipkartNavbar</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        #screen {
+            width: 100%;
+            height: 100vh;
+            /* border: 2px solid red; */
+        }
+
+        #navbar {
+            width: 100%;
+            height: 8%;
+            background-color: rgb(40, 116, 240);
+        }
+        #nav{
+            /* border: 2px solid yellow; */
+            width: 85%;
+            height: 100%;
+            display: flex;
+            margin: auto;
+            justify-content: space-around;
+            align-items: center;
+        }
+        #logo{
+            /* border: 2px solid red; */
+            width: 55%;
+            display: flex;
+            align-items: center;
+            color: white;
+            position: relative;
+        }
+        #login{
+            /* border: 2px solid red; */
+            width: 8%;
+        }
+        #btn{
+            width: 120px;
+            height: 35px;
+            color: rgb(40, 116, 240);
+            font-size: 15px;
+            font-weight: bolder;
+        }
+        #cart{
+            /* border: 2px solid red; */
+            width: 30%;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            color: white;
+        }
+        #more{
+            display: flex;
+            align-items: center;
+        }
+        #more>i{
+            padding-top: 3px;
+            padding-left: 5px;
+        }
+        #cart_logo{
+            display: flex;
+        }
+        #cart_logo>div{
+            padding-left: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div id="screen">
+        <div id="navbar">
+            <div id="nav">
+                <div id="logo">
+                    <div>
+                        <div>
+                            <!-- <h3 style="font-family: cursive;"><b>filpkart</b></h3>--> <img src="https://static-assets-web.flixcart.com/fk-p-linchpin-web/fk-cp-zion/img/flipkart-plus_8d85f4.png" style="width: 78px; height: 20px;" /> 
+                        </div>
+                        <p>
+                            <small>Exlore</small>
+                            <span style="color: yellow">
+                                <small>Plus</small>
+                            </span>
+                        </p>
+                    </div>
+                    <div style="padding-left: 10px;">
+                        <input placeholder="Search filpkart.in" style="height: 40px; width: 500px;padding-left: 25px;" />
+                    </div>
+                    <i class="fa-solid fa-magnifying-glass fa-xl"
+                        style="color: rgb(40,116,240);position: absolute; right: 40px;"></i>
+                </div>
+                <div id="login">
+                    <button id="btn">Login</button>
+                </div>
+                <div id="cart">
+                    <div>Become a Seller</div>
+                    <div id="more">
+                        <div>More</div>
+                        <i class="fa-solid fa-angle-down fa-xs"></i>
+                    </div>
+                    <div id="cart_logo">
+                        <i class="fa-solid fa-cart-shopping "></i>
+                        <div>Cart</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
