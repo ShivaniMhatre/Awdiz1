@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 6 09-05-2023</title>
+    <style>
+        #screen {
+            width: 100%;
+            height: 1200px;
+            /* border: 2px solid black; */
+            display: flex;
+            justify-content: space-around;
+            background-color: rgb(96, 62, 146);
+        }
+
+        #left {
+            width: 20%;
+            height: 100%;
+            background-color: blackrgb(53, 42, 154);
+            /* border: 1px solid red; */
+        }
+
+        #profile {
+            text-align: center;
+        }
+
+        #techstack {
+            width: 100%;
+            height: 23%;
+            /* border: 1px solid blue; */
+        }
+
+        #skill {
+            width: 100%;
+            height: 16%;
+            /* border: 1px solid blue; */
+        }
+
+        #hobbie {
+            width: 100%;
+            height: 12%;
+            /* border: 1px solid blue; */
+        }
+
+        #sign {
+            width: 100%;
+            height: 9%;
+            /* border: 1px solid blue; */
+        }
+
+
+
+        #right {
+            width: 73%;
+            height: 100%;
+            /* border: 1px solid black; */
+            background-color: rgb(53, 42, 154);
+            /* display: flex; */
+        }
+
+        .sameforall {
+            width: 100%;
+            height: 24%;
+            /* border: 1px solid blue; */
+        }
+
+        .sameforallright {
+            width: 100%;
+            height: 30%;
+            border: 1px solid blue;
+            /* justify-content: space-around; */
+            /* display: flex; */
+        }
+        .sameforallright>table,th{
+            border: 1px solid black;
+            /* border-collapse: collapse; */
+        }
+
+        .rightinnerdiv {
+            width: 20%;
+            height: 40%;
+            text-align: center;
+            border: 2px solid black;
+            border-radius: 10px;
+            background-color: rgb(51, 51, 92);
+        }
+
+        .margin-top-bottom {
+            margin-top: 3px;
+            margin-bottom: 2px;
+        }
+
+        .margin-left {
+            margin-left: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="screen">
+        <div id="left">
+            <div id="profile" class="sameforall">
+                <div style="width: 70%;height: 60%;margin: auto;">
+                    <img src="./shivani.jpg" style="width: 100%;height: 100%;" />
+                </div>
+                <h2 class="margin-top-bottom">Shivani</h2>
+                <h4 class="margin-top-bottom">7385994612</h4>
+                <h4 class="margin-top-bottom">shivanikatkar97@gmail.com</h4>
+            </div>
+            <div id="techstack">
+                <h4 class="margin-left">Frontend Technologies :</h4>
+                <ul class="margin-left">
+                    <li>React</li>
+                    <li>Html</li>
+                    <li>Css</li>
+                    <li>JavaScipt</li>
+                </ul>
+                <h4 class="margin-left">Backend Technologies :</h4>
+                <ul>
+                    <li>NodeJs</li>
+                    <li>Express</li>
+                    <li>MongoDb</li>
+                </ul>
+            </div>
+            <div id="skill">
+                <h4 class="margin-left">Skills :</h4>
+                <ul class="margin-left">
+                    <li>Team Member</li>
+                    <li>Fast Learner</li>
+                    <li>Good Time Management</li>
+                    <li>Flexible about time</li>
+                    <li>Leadership</li>
+                    <li>Problem Solver</li>
+                </ul>
+            </div>
+            <div id="hobbie" class="sameforall">
+                <h4 class="margin-left">Hobbies :</h4>
+                <ul class="margin-left">
+                    <li>Reading Book</li>
+                    <li>Exporing new things</li>
+                    <li>Teaching</li>
+                </ul>
+            </div>
+            <div id="contact" class="sameforall">
+                <lable>
+                    <h4 class="margin-left">Get In Touch</h4>
+                </lable>
+                <input type="text" class="margin-left" style="border-color:yellow; border-radius: 5px;">
+                <button class="margin-left"
+                    style="background-color: rgb(165, 243, 248); border: none;border-color: none;">Send Message
+                    Me!!!</button>
+                <h4 class="margin-left">Signature</h4>
+                <small class="margin-left">Shivani</small>
+                <h4 class="margin-left">Date</h4>
+                <input type="date" class="margin-left">
+            </div>
+
+        </div>
+        <div id="right">
+            <div class="sameforallright">
+                <h2>Experience :</h2>
+                <div style="display: flex; justify-content: space-around; margin: auto;">
+                    <div class="rightinnerdiv">
+                        <h3>Amazon</h3>
+                        <p>FrontEnd Developer</p>
+                        <p>2019-2020</p>
+                    </div>
+                    <div class="rightinnerdiv">
+                        <h3>flipkart</h3>
+                        <p>FrontEnd Developer</p>
+                        <p>2021-2022</p>
+                    </div>
+                    <div class="rightinnerdiv">
+                        <h3>Myntra</h3>
+                        <p>FullStack Developer</p>
+                        <p>2022-2023</p>
+                    </div>
+                </div>
+            </div>
+            <div class="sameforallright">
+                <h2>Education :</h2>
+                <div style="margin-left: 30%; ">
+                    <table >
+                        <thead>
+                            <tr>
+                                <th>Sr.No</th>
+                                <th>College Name</th>
+                                <th>Year</th>
+                                <th>Grade</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th>1</th>
+                                <th>Modern College of Engg Pune -05</th>
+                                <th>2020</th>
+                                <th>A+</th>
+                            </tr>
+                            <tr>
+                                <th>2</th>
+                                <th>Modern College of ASC Pune -05</th>
+                                <th>2017</th>
+                                <th>A+</th>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="sameforallright">Project</div>
+        </div>
+    </div>
+</body>
+
+</html>
