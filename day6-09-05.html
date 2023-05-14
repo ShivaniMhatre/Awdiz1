@@ -13,13 +13,13 @@
             /* border: 2px solid black; */
             display: flex;
             justify-content: space-around;
-            background-color: rgb(96, 62, 146);
+            background-color: gray;
         }
 
         #left {
             width: 20%;
             height: 100%;
-            background-color: blackrgb(53, 42, 154);
+            background-color: rgb(196, 194, 190);
             /* border: 1px solid red; */
         }
 
@@ -56,8 +56,8 @@
         #right {
             width: 73%;
             height: 100%;
-            /* border: 1px solid black; */
-            background-color: rgb(53, 42, 154);
+            /* border: 1px solid black;  */
+            background-color: rgb(196, 194, 190);
             /* display: flex; */
         }
 
@@ -70,13 +70,17 @@
         .sameforallright {
             width: 100%;
             height: 30%;
-            border: 1px solid blue;
+            /* border: 1px solid blue; */
             /* justify-content: space-around; */
             /* display: flex; */
         }
-        .sameforallright>table,th{
+
+        .sameforallright>table,
+        th,td
+         {
             border: 1px solid black;
-            /* border-collapse: collapse; */
+            border-collapse: collapse;
+            text-align: center;
         }
 
         .rightinnerdiv {
@@ -183,7 +187,7 @@
             <div class="sameforallright">
                 <h2>Education :</h2>
                 <div style="margin-left: 30%; ">
-                    <table >
+                    <table>
                         <thead>
                             <tr>
                                 <th>Sr.No</th>
@@ -209,7 +213,36 @@
                     </table>
                 </div>
             </div>
-            <div class="sameforallright">Project</div>
+            <div class="sameforallright">
+                <h2>Project :</h2>
+                <div style="margin-left: 30%;">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Sr.No</th>
+                                <th>Project</th>
+                                <th>Tech Stack</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td>Clone of Facebook.com</td>
+                                <td>React</td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>Clone of Amazon.com</td>
+                                <td>HTML,CSS,JavaScript</td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td>Clone Of Myntra.com</td>
+                                <td>HTML,CSS,JavaScript</td>
+                            </tr>
+                        </tbody>
+                </div>
+            </div>
         </div>
     </div>
 </body>
