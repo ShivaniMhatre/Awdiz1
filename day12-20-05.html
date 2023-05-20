@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 12 20-05-2023 Myntra(FlesxWrap)</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        #screen {
+            width: 100%;
+            border: 2px solid black;
+        }
+
+        #navbar {
+            height: 50px;
+            /* border: 1px solid red; */
+        }
+
+        #body {
+            display: flex;
+            justify-content: space-around;
+            font-family: Assistant, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+        }
+
+        #body>div:nth-child(1) {
+            width: 15%;
+            /* border: 2px solid yellowgreen; */
+            padding-left: 20px;
+        }
+
+        #body>div:nth-child(2) {
+            width: 81%;
+            /* border: 2px solid yellowgreen; */
+        }
+
+        #body>div:nth-child(1)>div {
+            border: 1px solid rgb(241,240,243);
+            border-bottom: 1px solid rgb(241,240,243);
+            padding-left: 10px;
+        }
+
+        #body>div:nth-child(1)>div>h4 {
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+
+        #body>div:nth-child(1)>div>input,
+        label {
+            margin-bottom: 10px;
+        }
+
+        #product {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+
+        #product>div {
+            width: 18%;
+            height: 370px;
+        }
+        #product>div:hover{
+            border: 1px solid black;
+        }
+        #product>div>img {
+            width: 100%;
+            height: 75%;
+        }
+
+        #product>div>h4,p {
+            margin-left: 20px;
+            margin-bottom: 4px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="screen">
+        <div id="navbar"></div>
+        <div id="body">
+            <div>
+                <div>
+                    <h4>CATEGORIES</h4>
+                    <input type="checkbox">
+                    <label>Tshirts(96183)</label><br />
+                    <input type="checkbox">
+                    <label>Lounge Tshirts(1064)</label><br />
+                </div>
+                <div>
+                    <h4>BRAND</h4>
+                    <input type="checkbox">
+                    <label>U.S. Polo Assn.(198)</label><br />
+                    <input type="checkbox">
+                    <label>Lounge Tshirts(1064)</label><br />
+                    <input type="checkbox">
+                    <label>Tshirts(96183)</label><br />
+                    <input type="checkbox">
+                    <label>Lounge Tshirts(1064)</label><br />
+                    <input type="checkbox">
+                    <label>Tshirts(96183)</label><br />
+                    <input type="checkbox">
+                    <label>Tshirts(96183)</label><br />
+                    <input type="checkbox">
+                    <label>Lounge Tshirts(1064)</label><br />
+                </div>
+                <div>
+                    <h4>PRICE</h4>
+                    <input type="checkbox">
+                    <label>U.S. Polo Assn.(198)</label><br />
+                    <input type="checkbox">
+                    <label>Lounge Tshirts(1064)</label><br />
+                    <input type="checkbox">
+                    <label>Tshirts(96183)</label><br />
+                    <input type="checkbox">
+                    <label>Lounge Tshirts(1064)</label><br />
+                    <input type="checkbox">
+                    <label>Tshirts(96183)</label><br />
+                </div>
+                <div>
+                    <h4>COLOR</h4>
+                    <input type="checkbox">
+                    <label>U.S. Polo Assn.(198)</label><br />
+                    <input type="checkbox">
+                    <label>Lounge Tshirts(1064)</label><br />
+                    <input type="checkbox">
+                    <label>Tshirts(96183)</label><br />
+                    <input type="checkbox">
+                    <label>Lounge Tshirts(1064)</label><br />
+                    <input type="checkbox">
+                    <label>Tshirts(96183)</label><br />
+                </div>
+                <div>
+                    <h4>DISCOUNT RANGE</h4>
+                    <input type="checkbox">
+                    <label>U.S. Polo Assn.(198)</label><br />
+                    <input type="checkbox">
+                    <label>Lounge Tshirts(1064)</label><br />
+                    <input type="checkbox">
+                    <label>Tshirts(96183)</label><br />
+                    <input type="checkbox">
+                    <label>Lounge Tshirts(1064)</label><br />
+                    <input type="checkbox">
+                    <label>Tshirts(96183)</label><br />
+                </div>
+            </div>
+            <div id="product">
+                <div>
+                    <img src="https://assets.myntassets.com/dpr_2,q_60,w_210,c_limit,fl_progressive/assets/images/20201262/2023/3/21/5dbc0eaa-07d3-48c8-90a9-ae901e7a40ab1679389127442-Levis-Men-Lounge-Tshirts-4171679389126809-1.jpg"
+                        title="Levis Men Pack of 2 Smartskin Technology Pure Cotton V-Neck Lounge T-shirt"
+                        style="width: 100%; display: block;">
+                    <h4>Puma</h4>
+                    <p>Tshirt</p>
+                    <h4>3000</h4>
+                </div>
+                <div>
+                    <img src="https://assets.myntassets.com/dpr_2,q_60,w_210,c_limit,fl_progressive/assets/images/20201262/2023/3/21/5dbc0eaa-07d3-48c8-90a9-ae901e7a40ab1679389127442-Levis-Men-Lounge-Tshirts-4171679389126809-1.jpg"
+                        title="Levis Men Pack of 2 Smartskin Technology Pure Cotton V-Neck Lounge T-shirt"
+                        style="width: 100%; display: block;">
+                    <h4>adidas</h4>
+                    <p>Tshirt</p>
+                    <h4>4000</h4>
+                </div>
+                <div>
+                    <img src="https://assets.myntassets.com/dpr_2,q_60,w_210,c_limit,fl_progressive/assets/images/20201262/2023/3/21/5dbc0eaa-07d3-48c8-90a9-ae901e7a40ab1679389127442-Levis-Men-Lounge-Tshirts-4171679389126809-1.jpg"
+                        title="Levis Men Pack of 2 Smartskin Technology Pure Cotton V-Neck Lounge T-shirt"
+                        style="width: 100%; display: block;">
+                    <h4>Puma</h4>
+                    <p>Tshirt</p>
+                    <h4>3000</h4>
+                </div>
+                <div>
+                    <img src="https://assets.myntassets.com/dpr_2,q_60,w_210,c_limit,fl_progressive/assets/images/20201262/2023/3/21/5dbc0eaa-07d3-48c8-90a9-ae901e7a40ab1679389127442-Levis-Men-Lounge-Tshirts-4171679389126809-1.jpg"
+                        title="Levis Men Pack of 2 Smartskin Technology Pure Cotton V-Neck Lounge T-shirt"
+                        style="width: 100%; display: block;">
+                    <h4>adidas</h4>
+                    <p>Tshirt</p>
+                    <h4>4000</h4>
+                </div>
+                <div>
+                    <img src="https://assets.myntassets.com/dpr_2,q_60,w_210,c_limit,fl_progressive/assets/images/20201262/2023/3/21/5dbc0eaa-07d3-48c8-90a9-ae901e7a40ab1679389127442-Levis-Men-Lounge-Tshirts-4171679389126809-1.jpg"
+                        title="Levis Men Pack of 2 Smartskin Technology Pure Cotton V-Neck Lounge T-shirt"
+                        style="width: 100%; display: block;">
+                    <h4>adidas</h4>
+                    <p>Tshirt</p>
+                    <h4>4000</h4>
+                </div>
+                <div>
+                    <img src="https://assets.myntassets.com/dpr_2,q_60,w_210,c_limit,fl_progressive/assets/images/20201262/2023/3/21/5dbc0eaa-07d3-48c8-90a9-ae901e7a40ab1679389127442-Levis-Men-Lounge-Tshirts-4171679389126809-1.jpg"
+                        title="Levis Men Pack of 2 Smartskin Technology Pure Cotton V-Neck Lounge T-shirt"
+                        style="width: 100%; display: block;">
+                    <h4>Puma</h4>
+                    <p>Tshirt</p>
+                    <h4>3000</h4>
+                </div>
+                <div>
+                    <img src="https://assets.myntassets.com/dpr_2,q_60,w_210,c_limit,fl_progressive/assets/images/20201262/2023/3/21/5dbc0eaa-07d3-48c8-90a9-ae901e7a40ab1679389127442-Levis-Men-Lounge-Tshirts-4171679389126809-1.jpg"
+                        title="Levis Men Pack of 2 Smartskin Technology Pure Cotton V-Neck Lounge T-shirt"
+                        style="width: 100%; display: block;">
+                    <h4>adidas</h4>
+                    <p>Tshirt</p>
+                    <h4>4000</h4>
+                </div>
+                <div>
+                    <img src="https://assets.myntassets.com/dpr_2,q_60,w_210,c_limit,fl_progressive/assets/images/20201262/2023/3/21/5dbc0eaa-07d3-48c8-90a9-ae901e7a40ab1679389127442-Levis-Men-Lounge-Tshirts-4171679389126809-1.jpg"
+                        title="Levis Men Pack of 2 Smartskin Technology Pure Cotton V-Neck Lounge T-shirt"
+                        style="width: 100%; display: block;">
+                    <h4>Puma</h4>
+                    <p>Tshirt</p>
+                    <h4>3000</h4>
+                </div>
+                <div>
+                    <img src="https://assets.myntassets.com/dpr_2,q_60,w_210,c_limit,fl_progressive/assets/images/20201262/2023/3/21/5dbc0eaa-07d3-48c8-90a9-ae901e7a40ab1679389127442-Levis-Men-Lounge-Tshirts-4171679389126809-1.jpg"
+                        title="Levis Men Pack of 2 Smartskin Technology Pure Cotton V-Neck Lounge T-shirt"
+                        style="width: 100%; display: block;">
+                    <h4>adidas</h4>
+                    <p>Tshirt</p>
+                    <h4>4000</h4>
+                </div>
+                <div>
+                    <img src="https://assets.myntassets.com/dpr_2,q_60,w_210,c_limit,fl_progressive/assets/images/20201262/2023/3/21/5dbc0eaa-07d3-48c8-90a9-ae901e7a40ab1679389127442-Levis-Men-Lounge-Tshirts-4171679389126809-1.jpg"
+                        title="Levis Men Pack of 2 Smartskin Technology Pure Cotton V-Neck Lounge T-shirt"
+                        style="width: 100%; display: block;">
+                    <h4>adidas</h4>
+                    <p>Tshirt</p>
+                    <h4>4000</h4>
+                </div>
+                <div>
+                    <img src="https://www.myntra.com/lounge-tshirts/levis/levis-men-pack-of-2-smartskin-technology-pure-cotton-v-neck-lounge-t-shirt/20201262/buy
+                        title="Levis Men Pack of 2 Smartskin Technology Pure Cotton V-Neck Lounge T-shirt"
+                        style="width: 100%; display: block;">
+                    <h4>adidas</h4>
+                    <p>Tshirt</p>
+                    <h4>4000</h4>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
