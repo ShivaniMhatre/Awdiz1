@@ -23,15 +23,26 @@
 // Q. Check user age and provide licence
 // 1.if age is eqaul to 18 then he/she is applicable for LI.
 // 2.if age is lesser than 80 and greter than 18 then he/she is applicable for driving Licenece
-var age = 130;
+var age = 28;
 
 if (age == 18) {
     console.log("You are applicable for Learning Licence......")
 }
-else if (age < 80 && age > 18) {
-    console.log("You are allowed to apply Driving Licence......")
-}
+// 
+else if (age > 80 || age < 18) {
+         console.log("You are not allowed to apply Driving Licence......")
+    }
 else {
-    console.log("You are not allowed to apply Driving Licence......")
+    console.log("You are  allowed to apply Driving Licence.....")
 }
+
+// else if (age > 80 || age < 18) {
+//     console.log("You are not allowed to apply Driving Licence......")
+// }
+// else if (age < 80 && age > 18) {
+//     console.log("You are allowed to apply Driving Licence......lowd")
+// }
+// else {
+//     console.log("Apply Agin")
+// }
 
