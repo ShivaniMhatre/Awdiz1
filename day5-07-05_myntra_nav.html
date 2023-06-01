@@ -22,7 +22,7 @@
             align-items: center;
         }
         #logo {
-            width: 10%;
+            width: 15%;
             /* border: 2px solid red; */
         }
         #navi {
@@ -32,13 +32,24 @@
             justify-content: space-evenly;
         }
         #search {
-            width: 35%;
+            /* width: 35%; */
+            height: 40px;
             /* border: 2px solid rgb(160, 157, 157); */
             display: flex;
+            background-color: rgb(245,245,246);
+            align-items: center;
+            border-radius: 5px ;
         }
-        #search-box{
-            border: none;
-            border-color: none;
+
+        #search>div>input{
+            /* border: none; */
+            border-style: none;
+             /* border-color: none;  */
+            padding-left: 10px;
+            outline: none;
+        }
+        #search>div>i{
+            padding-left: 10px;
         }
         #profile {
             width: 15%;
@@ -71,7 +82,7 @@
     <div id="screen">
         <div id="navbar">
             <div id="logo">
-                <img src="./myntra.png" style="width: 78px; height: 70px;"/>
+                <img src="./myntra.png" style="width: 100%; height: 70px;"/>
             </div>
             <div id="navi">
                 <div>MEN</div>
@@ -83,7 +94,8 @@
             </div>
             <div id="search">
                 <div>
-                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <i class="fa-solid fa-magnifying-glass" style="color:rgb(130,131,150)"></i>
+                    <input type="text" placeholder="serach for product brands and more">
                     
                 </div>
                 <div>

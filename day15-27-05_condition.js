@@ -26,14 +26,14 @@
 var age = 28;
 
 if (age == 18) {
-    console.log("You are applicable for Learning Licence......")
+    console.log("You are applicable for Learning Licence......");
 }
 // 
 else if (age > 80 || age < 18) {
-         console.log("You are not allowed to apply Driving Licence......")
+         console.log("You are not allowed to apply Driving Licence......");
     }
 else {
-    console.log("You are  allowed to apply Driving Licence.....")
+    console.log("You are  allowed to apply Driving Licence.....");
 }
 
 // else if (age > 80 || age < 18) {
