@@ -19,7 +19,7 @@ for (a = 0; a < arr.length; a++) {
         if (arr[b] - arr[a]==target) {
              console.log(arr[b],"-",arr[a],"=", arr[b]-arr[a]);
         }
-        else if(arr[a] - arr[b]==target){
+        if(arr[a] - arr[b]==target){
             console.log(arr[a],"-",arr[b],"=",arr[a]-arr[b]);
         }
     }
@@ -34,20 +34,17 @@ for (a = 0; a < arr.length; a++) {
 // Q 3. Find Three Number Which Has Addition Is Equal To Target
 var x, y, z;
 var target = 93;
-var arr = [1,3, 54, 34, 32, 89, 23, 39, 76, 91,1];
-for (x = 0; x < arr.length; x++) {
-    for (y = x + 1; y < arr.length; y++) {
-        for (z = y + 1; z < arr.length; z++) {
+var arr = [3, 54, 65, 32, 6, 23, 56, 76, 17, 100, 7, 91, 1,1];
+for (var x = 0; x < arr.length - 2; x++) {
+    for (var y = x + 1; y < arr.length - 1; y++) {
+        for (var z = y + 1; z < arr.length; z++) {
+            // console.log(arr[x], "arr[x]", arr[y], "arr[y]", arr[z], "arr[z]")
             if (arr[x] + arr[y] + arr[z] == target) {
-                console.log(arr[x],"+",arr[y],"+", arr[z],"=",arr[x]+arr[y]+arr[z] )
-            } 
-            
+                console.log(arr[x], arr[y], arr[z], "got it..")
+            }
         }
-        
     }
-
 }
-
 // OUTPUT
 // 1 + 3 + 89 = 93
 // 1 + 91 + 1 = 93
